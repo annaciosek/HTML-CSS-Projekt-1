@@ -1,6 +1,53 @@
 :root {
+    --black: #000000;
     --gray: #4E4E4E;
     --blue: #405D78;
     --light-bg: #F1F1F1;
     --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.16;
+    color: var(--black);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+/*
+-------------------------- Header --------------------------
+*/
+#header {
+    background-color: var(--gray);
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li:not(.navigation li:last-child) {
+    margin-right: 46px;
+}
+
+#header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo  {
+    font-weight: 700;
+}
+
+.kontakt {
+    cursor: not-allowed;
 }
