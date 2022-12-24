@@ -5,21 +5,37 @@
     --light-bg: #F1F1F1;
     --white: #ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.16;
     color: var(--black);
+    background-color: var(--light-bg);
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
 }
+
+h1 {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 62px;
+
+}
+
+
 /*
--------------------------- Header --------------------------
+----------------------- Header -----------------------
 */
+
 #header {
     background-color: var(--gray);
 }
@@ -35,7 +51,7 @@ body {
     display: flex;
 }
 
-.navigation li:not(.navigation li:last-child) {
+.navigation li:not(:last-child) {
     margin-right: 46px;
 }
 
@@ -50,4 +66,58 @@ body {
 
 .kontakt {
     cursor: not-allowed;
+}
+
+/*
+----------------------- Hero -----------------------
+*/
+
+#hero-section {
+    background-image: url('images/tlo-sekcji.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.15);
+    position: absolute; /* make sure it doesn't cover text */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#hero-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    padding-right: 40%;
+}
+
+.hero p {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+.hero a {
+    border: 3px solid var(--white);
+    color: var(--white);
+    font-weight: 700;
+    padding: 14px 58px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.4s all;
+}
+
+.hero a:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
