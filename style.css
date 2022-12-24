@@ -2,6 +2,7 @@
     --black: #000000;
     --gray: #4E4E4E;
     --blue: #405D78;
+    --heading: #152D41;
     --light-bg: #F1F1F1;
     --white: #ffffff;
 }
@@ -22,15 +23,21 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    color: var(--white);
+h1, h2 {
+    color: var(--heading);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     margin-bottom: 62px;
-
 }
 
+h1.white, h2.white {
+    color: var(--white);
+}
+
+section:not(#hero-section) {
+    padding: 60px 0;
+}
 
 /*
 ----------------------- Header -----------------------
