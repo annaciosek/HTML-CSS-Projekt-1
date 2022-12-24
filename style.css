@@ -23,12 +23,23 @@ body {
     margin: 0 auto;
 }
 
+strong {
+    font-weight: 700;
+}
+
 h1, h2 {
     color: var(--heading);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
+}
+
+h1 {
     margin-bottom: 62px;
+}
+
+h2 {
+    margin-bottom: 80px;
 }
 
 h1.white, h2.white {
@@ -38,6 +49,8 @@ h1.white, h2.white {
 section:not(#hero-section) {
     padding: 60px 0;
 }
+
+
 
 /*
 ----------------------- Header -----------------------
@@ -128,3 +141,38 @@ section:not(#hero-section) {
     background-color: var(--white);
     color: var(--black);
 }
+
+/*
+----------------------- About -----------------------
+*/
+.our-team {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.our-team:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.our-team:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.photo-one {
+    background-image: url(images/person-1.jpg);
+}
+.photo-two {
+    background-image: url(images/person-2.jpg);
+}
+
+.person {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
