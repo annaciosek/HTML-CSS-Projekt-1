@@ -211,6 +211,10 @@ section:not(#hero-section) {
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: 0.5s all;
+}
+.services-single:hover {
+    transform: scale(1.05);
 }
 
 .services-single:first-child::before {
