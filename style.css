@@ -254,3 +254,7 @@ section:not(#hero-section) {
     font-weight: 700;
     flex: 1;
 }
+
+i.fa-brands {
+    color: var(--white);
+}
