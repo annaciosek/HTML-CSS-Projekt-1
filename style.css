@@ -5,6 +5,8 @@
     --heading: #152D41;
     --light-bg: #F1F1F1;
     --white: #ffffff;
+    --accent: #E07A64;
+
 }
 html {
   scroll-behavior: smooth;
@@ -46,10 +48,16 @@ h1.white, h2.white {
     color: var(--white);
 }
 
+h3 {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
 section:not(#hero-section) {
     padding: 60px 0;
 }
-
 
 
 /*
@@ -102,7 +110,7 @@ section:not(#hero-section) {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.15);
-    position: absolute; /* make sure it doesn't cover text */
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -174,5 +182,50 @@ section:not(#hero-section) {
     height: 197px;
     border-radius: 50%;
     flex-shrink: 0;
+}
+
+/*
+----------------------- Services -----------------------
+*/
+
+#services-section {
+    background-color: var(--blue);
+}
+
+.services {
+    width: 75%; /* (3 boxes + gaps) divided by container width */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 63px;
+}
+
+.services-single {
+    background-color: var(--light-bg);
+    text-align: center;
+    height: 194px;
+    padding: 75px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.services-single:first-child::before {
+    content: '';
+    background-color: var(--accent);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: -11px;
+    left: -11px;
+}
+
+.services-single:first-child::after {
+    content: "(nowość)";
+    font-size: 18px;
 }
 
