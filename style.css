@@ -233,3 +233,24 @@ section:not(#hero-section) {
     font-size: 18px;
 }
 
+
+/*
+----------------------- Footer -----------------------
+*/
+
+#footer {
+    background-color: var(--gray);
+    padding: 24px 0 16px 0;
+}
+
+.footer {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+#footer p {
+    color: var(--white);
+    font-weight: 700;
+    flex: 1;
+}
